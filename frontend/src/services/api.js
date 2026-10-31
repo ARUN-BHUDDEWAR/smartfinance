@@ -1,7 +1,10 @@
 import axios from "axios";
 
+const API_URL =
+  import.meta.env.VITE_API_URL || "https://smartfinance-mo7l.onrender.com/api";
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api",
+  baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
   },

@@ -10,7 +10,7 @@ spring:
 
 app:
   cors:
-    allowed-origins: "${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:5173}"
+    allowed-origins: "${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:5173,https://smartfinance-d4cv.vercel.app}"
   demo-data:
     enabled: "${DEMO_DATA_ENABLED:true}"
     password: "${DEMO_USER_PASSWORD:}"
