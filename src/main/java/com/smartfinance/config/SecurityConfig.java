@@ -91,7 +91,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authenticationProvider(authenticationProvider)
             .authorizeHttpRequests(authorize -> authorize
-                .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/", "/error", "/api/auth/**").permitAll()
                 .anyRequest().authenticated())
             .addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class);
 
